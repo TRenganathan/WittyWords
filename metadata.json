@@ -1,0 +1,6 @@
+{
+  "name": "WittyWords",
+  "description": "Learn high-impact English vocabulary through short, funny, meaningful stories with interactive comic dialogues, instant smart definitions, audio pronunciation, and recall games.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

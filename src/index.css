@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-serif: 'Newsreader', Georgia, serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-tamil: 'Noto Sans Tamil', -apple-system, 'Tamil Sangam MN', sans-serif;
+  --color-cream: #FAF7F2;
+  --color-warmstone: #E6E1D6;
+  --color-espresso: #1C1917;
+  --color-warm-slate: #57534E;
+  --color-terracotta: #E05A47;
+}
+
+body {
+  background-color: #FAF7F2;
+  color: #1C1917;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF7F2;
+}
+::-webkit-scrollbar-thumb {
+  background: #D8D2C6;
+  border-radius: 9999px;
+}
+
+/* Tactile button press simulation */
+.tactile-btn {
+  box-shadow: 0 3px 0 #E6E1D6;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+.tactile-btn:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px 0 #E6E1D6;
+}
+
+.tactile-btn-primary {
+  background-color: #E05A47;
+  color: #FFFFFF;
+  box-shadow: 0 3px 0 #B93E2D;
+  transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.15s ease;
+}
+.tactile-btn-primary:hover {
+  background-color: #D34B38;
+}
+.tactile-btn-primary:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px 0 #B93E2D;
+}
+
+/* Story target word highlight */
+.story-target-word {
+  background-color: #FEF08A;
+  color: #1C1917;
+  border-bottom: 2px dotted #B45309;
+  border-radius: 3px;
+  padding: 1px 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.story-target-word:hover {
+  background-color: #FDE047;
+}
+
+/* Regular clickable word */
+.story-regular-word {
+  cursor: pointer;
+  border-radius: 2px;
+  transition: background-color 0.15s ease;
+}
+.story-regular-word:hover {
+  background-color: rgba(224, 90, 71, 0.1);
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: #E05A47;
+}
